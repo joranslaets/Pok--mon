@@ -27,4 +27,17 @@ internal sealed class Charmander : Pokemon
     public Charmander() : base(39, 52, "Fire") { }
 
     public override string Geluid() => "Char!";
+
+    public string VuurAanval(Pokemon target)
+    {
+        if (target == null)
+        {
+            return "Geen doelwit om aan te vallen.";
+        }
+
+        var schade = AanvalsPunten;
+        var nieuwLevens = Math.Max(0, target.Levens - schade);
+        return $"Charmander valt {target.Type}-pokemon aan voor {schade} schade. Levens van doelwit: {target.Levens} -> {nieuwLevens}.";
+    }
 }
+
