@@ -14,3 +14,17 @@ internal abstract class Pokemon
 
     public abstract string Geluid();
 }
+
+internal sealed class Pikachu : Pokemon
+{
+    public Pikachu() : base(35, 55, "Electric") { }
+
+    public override string Geluid() => "Pika pika!";
+}
+
+internal sealed class Charmander : Pokemon
+{
+    public Charmander() : base(39, 52, "Fire") { }
+
+    public override string Geluid() => "Char!";
+}
