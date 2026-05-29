@@ -1,7 +1,7 @@
 Console.WriteLine("Hello, World!");
 internal abstract class Pokemon
 {
-    public int Levens { get; init; }
+    public int Levens { get; set; }
     public int AanvalsPunten { get; init; }
     public string Type { get; init; }
 
@@ -27,4 +27,14 @@ internal sealed class Charmander : Pokemon
     public Charmander() : base(39, 52, "Fire") { }
 
     public override string Geluid() => "Char!";
+
+    public void VuurAanval(Pokemon target)
+    {
+        int damage = AanvalsPunten;
+        if (target.Type == "Gras")
+        {
+            damage *= 2;
+        }
+        target.Levens -= damage;
+    }
 }
