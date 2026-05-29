@@ -1,0 +1,12 @@
+{
+  "files.exclude": {
+    "**/appsettings.json": true,
+    "**/appsettings.Development.json": true,
+    "**/appsettings*.json": true
+  },
+  "search.exclude": {
+    "**/appsettings.json": true,
+    "**/appsettings.Development.json": true,
+    "**/appsettings*.json": true
+  }
+}

@@ -1,0 +1,77 @@
+# .gitignore for .NET / C# / Visual Studio projects
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.userprefs
+*.sln.docstates
+
+# Build results / built output directories
+bin/
+obj/
+[Bb]uild/
+out/
+dist/
+publish/
+artifacts/
+[Tt]est[Rr]esult*/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+project.assets.json
+package-lock.json
+packages.config
+
+# Rider
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# User-specific files
+*.log
+*.tlog
+*.tmp
+*.bak
+*~
+
+# Mono
+*.pidb
+*.userprefs
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Generated files
+*.g.cs
+*.Designer.cs
+*.AssemblyInfo.cs
+
+# ASP.NET / web publish
+wwwroot/
+appsettings*.json
+
+# Azure / publish output
+PublishProfiles/
+
+# Test results
+TestResults/
+
+# Environment variables
+.env
+
+
+*.json
+*.sln
